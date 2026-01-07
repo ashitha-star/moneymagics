@@ -1,0 +1,7 @@
+acceptOnlyEncryptedData: false
+active: true
+apiId: __COLLECTION_SETTINGS__
+collectionName: public.journal_entry
+databaseName: moneymagics_db
+guid: 01KDQFZ601P57ER4Z180ZDBZ2F
+instanceName: test1

@@ -1,0 +1,11 @@
+active: true
+apiUserPasswordPath: common.apiUserPasswords.user1
+enablePasswordPath: true
+enableSwaggerDocs: null
+groupNames:
+  - group1
+guid: 01KDT107ZGTD7EB3TCT7C64QYF
+name: user1
+password: null
+swaggerURLRandomPart: null
+username: user1

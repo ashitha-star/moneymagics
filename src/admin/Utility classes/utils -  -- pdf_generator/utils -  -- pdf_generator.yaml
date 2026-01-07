@@ -1,0 +1,10 @@
+active: true
+folderPath: utils/
+guid: 01KD59X61PWJ5F23BHW7NBJXK6
+name: pdf_generator
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

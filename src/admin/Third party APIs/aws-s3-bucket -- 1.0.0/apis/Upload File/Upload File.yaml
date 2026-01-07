@@ -1,0 +1,28 @@
+active: true
+apiVersion: 1.0.0
+bundleName: aws-s3-bucket
+categoryRedis: GET_DATA
+errorList:
+  - Unable to upload file
+fileUpload: null
+guid: 01KCQW13WM1S9PDJWGZ2MR7PH6
+name: Upload File
+path: /upload-file
+queryParams:
+  - _id: 639ff9c6b4d7e21940f9f3d9
+    nonRemovable: false
+    readonlyKey: false
+    readonlyValue: false
+    required: false
+    type: text
+    valueArr: []
+reqBodySchema: {}
+reqQueryParametersSchema: {}
+requestMethod: POST
+swaggerDocs: null
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

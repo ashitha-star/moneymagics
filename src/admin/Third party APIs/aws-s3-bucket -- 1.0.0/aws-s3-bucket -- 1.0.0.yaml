@@ -1,0 +1,28 @@
+active: true
+apiBundleLabel: AWS S3 Bucket
+apiBundleName: aws-s3-bucket
+dependencies:
+  nodeJS:
+    - _id: 63ad19f94fa53b4ab3f6e496
+      active: true
+      name: "@aws-sdk/smithy-client"
+      version: 3.234.0
+    - _id: 63ad19ebe27b860e8caf6568
+      active: true
+      name: "@aws-sdk/client-s3"
+      version: 3.238.0
+guid: 01KCQW13PFFQXCKTMY70PC7GT6
+secretKeys:
+  - _id: 63ad1a0f0e5784f22a7c1688
+    isRequired: true
+    keyName: secretAccessKey
+    keyType: string
+  - _id: 63ad1a070e5784f22a7c1681
+    isRequired: true
+    keyName: accessKeyId
+    keyType: string
+  - _id: 63ad1a010e5784f22a7c167b
+    isRequired: true
+    keyName: region
+    keyType: string
+storeApiVersion: 1.0.0

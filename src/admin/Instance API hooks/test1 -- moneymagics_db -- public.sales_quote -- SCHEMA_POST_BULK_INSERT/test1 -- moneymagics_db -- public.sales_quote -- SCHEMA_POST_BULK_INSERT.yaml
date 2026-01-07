@@ -1,0 +1,12 @@
+active: true
+apiId: SCHEMA_POST_BULK_INSERT
+collectionName: public.sales_quote
+databaseName: moneymagics_db
+guid: 01KD2THD4T4WA9DTX6J93JRH1W
+instanceName: test1
+postHooks:
+  - _id: 694a1acda9f9b74559643ddb
+    isActive: true
+    name: send email
+    runOnNativeProcess: true
+preHooks: []

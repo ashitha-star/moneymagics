@@ -1,0 +1,9 @@
+active: true
+apiCategory: INSTANCES
+collectionName: public.users
+databaseName: moneymagics_db
+guid: 01KE6A255NE2ZF0RB3J1R6QZB9
+instanceApiName: SCHEMA_POST_BULK_INSERT
+instanceName: test1
+runOnNativeProcess: null
+versions: []

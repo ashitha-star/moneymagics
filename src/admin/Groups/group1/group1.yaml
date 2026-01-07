@@ -1,0 +1,161 @@
+active: true
+apisRegex:
+  allCollections: false
+  allCustomApis: false
+  allDatabases: false
+  allFields: true
+  allInstanceApis: true
+  allInstances: false
+  allSystemApis: false
+  allThirdPartyApis: false
+  allWebSocketEvents: false
+fields:
+  test1:
+    moneymagics_db:
+      public.account:
+        category:
+          allowRead: true
+          allowWrite: false
+        id:
+          allowRead: true
+          allowWrite: false
+        name:
+          allowRead: true
+          allowWrite: false
+        undefined: {}
+      public.users:
+        created_at:
+          allowRead: false
+          allowWrite: false
+        email:
+          allowRead: false
+          allowWrite: false
+        id:
+          allowRead: false
+          allowWrite: false
+        is_active:
+          allowRead: false
+          allowWrite: false
+        name:
+          allowRead: false
+          allowWrite: false
+        password:
+          allowRead: false
+          allowWrite: false
+        phone_number:
+          allowRead: false
+          allowWrite: false
+        undefined: {}
+        updated_at:
+          allowRead: false
+          allowWrite: false
+guid: 01KDT11CHNKCCNKTW89SJRJMF2
+name: group1
+queryParams:
+  collectionNames:
+    - test1:moneymagics_db:public.account
+    - test1:moneymagics_db:public.item
+    - test1:moneymagics_db:public.journal_entry
+    - test1:moneymagics_db:public.journal_line
+    - test1:moneymagics_db:public.party
+    - test1:moneymagics_db:public.product_composition
+    - test1:moneymagics_db:public.products
+    - test1:moneymagics_db:public.purchase_invoice
+    - test1:moneymagics_db:public.purchase_item
+    - test1:moneymagics_db:public.purchase_order
+    - test1:moneymagics_db:public.purchase_payment
+    - test1:moneymagics_db:public.raw_materials
+    - test1:moneymagics_db:public.sales_invoice
+    - test1:moneymagics_db:public.sales_item
+    - test1:moneymagics_db:public.sales_payment
+    - test1:moneymagics_db:public.sales_quote
+    - test1:moneymagics_db:public.tax_code
+    - test1:moneymagics_db:public.time_entry
+    - test1:moneymagics_db:public.users
+  customApiNames: []
+  databaseNames:
+    - test1:moneymagics_db
+  eventNames: []
+  fields:
+    - test1:moneymagics_db:public.account
+    - test1:moneymagics_db:public.account:category
+    - test1:moneymagics_db:public.account:id
+    - test1:moneymagics_db:public.account:name
+    - test1:moneymagics_db:public.users
+    - test1:moneymagics_db:public.users:created_at
+    - test1:moneymagics_db:public.users:email
+    - test1:moneymagics_db:public.users:id
+    - test1:moneymagics_db:public.users:is_active
+    - test1:moneymagics_db:public.users:name
+    - test1:moneymagics_db:public.users:password
+    - test1:moneymagics_db:public.users:phone_number
+    - test1:moneymagics_db:public.users:updated_at
+  instanceNames:
+    - test1
+  schedulerNames: []
+  supportedApiNames:
+    - test1:moneymagics_db:public.account
+    - test1:moneymagics_db:public.account:GEN_DEL_DELETE_BY_ID
+    - test1:moneymagics_db:public.account:GEN_GET_ALL
+    - test1:moneymagics_db:public.account:GEN_GET_ALL_STREAM
+    - test1:moneymagics_db:public.account:GEN_GET_BY_ID
+    - test1:moneymagics_db:public.account:GEN_GET_DISTINCT
+    - test1:moneymagics_db:public.account:GEN_MASTER_SAVE
+    - test1:moneymagics_db:public.account:GEN_POST_BULK_INSERT
+    - test1:moneymagics_db:public.account:GEN_POST_COUNT
+    - test1:moneymagics_db:public.account:GEN_POST_DISTINCT_QUERY
+    - test1:moneymagics_db:public.account:GEN_POST_QUERY
+    - test1:moneymagics_db:public.account:GEN_POST_QUERY_DELETE
+    - test1:moneymagics_db:public.account:GEN_POST_QUERY_STREAM
+    - test1:moneymagics_db:public.account:GEN_PUT_UPDATE_BY_ID
+    - test1:moneymagics_db:public.account:GEN_UPDATE_MANY
+    - test1:moneymagics_db:public.account:SCHEMA_DEL_DELETE_BY_ID
+    - test1:moneymagics_db:public.account:SCHEMA_GET_ALL
+    - test1:moneymagics_db:public.account:SCHEMA_GET_ALL_STREAM
+    - test1:moneymagics_db:public.account:SCHEMA_GET_BY_ID
+    - test1:moneymagics_db:public.account:SCHEMA_GET_DISTINCT
+    - test1:moneymagics_db:public.account:SCHEMA_MASTER_SAVE
+    - test1:moneymagics_db:public.account:SCHEMA_POST_BULK_INSERT
+    - test1:moneymagics_db:public.account:SCHEMA_POST_COUNT
+    - test1:moneymagics_db:public.account:SCHEMA_POST_DISTINCT_QUERY
+    - test1:moneymagics_db:public.account:SCHEMA_POST_QUERY
+    - test1:moneymagics_db:public.account:SCHEMA_POST_QUERY_DELETE
+    - test1:moneymagics_db:public.account:SCHEMA_POST_QUERY_STREAM
+    - test1:moneymagics_db:public.account:SCHEMA_PUT_UPDATE_BY_ID
+    - test1:moneymagics_db:public.account:SCHEMA_UPDATE_MANY
+    - test1:moneymagics_db:public.users
+    - test1:moneymagics_db:public.users:GEN_DEL_DELETE_BY_ID
+    - test1:moneymagics_db:public.users:GEN_GET_ALL
+    - test1:moneymagics_db:public.users:GEN_GET_ALL_STREAM
+    - test1:moneymagics_db:public.users:GEN_GET_BY_ID
+    - test1:moneymagics_db:public.users:GEN_GET_DISTINCT
+    - test1:moneymagics_db:public.users:GEN_MASTER_SAVE
+    - test1:moneymagics_db:public.users:GEN_POST_BULK_INSERT
+    - test1:moneymagics_db:public.users:GEN_POST_COUNT
+    - test1:moneymagics_db:public.users:GEN_POST_DISTINCT_QUERY
+    - test1:moneymagics_db:public.users:GEN_POST_QUERY
+    - test1:moneymagics_db:public.users:GEN_POST_QUERY_DELETE
+    - test1:moneymagics_db:public.users:GEN_POST_QUERY_STREAM
+    - test1:moneymagics_db:public.users:GEN_PUT_UPDATE_BY_ID
+    - test1:moneymagics_db:public.users:GEN_UPDATE_MANY
+    - test1:moneymagics_db:public.users:SCHEMA_DEL_DELETE_BY_ID
+    - test1:moneymagics_db:public.users:SCHEMA_GET_ALL
+    - test1:moneymagics_db:public.users:SCHEMA_GET_ALL_STREAM
+    - test1:moneymagics_db:public.users:SCHEMA_GET_BY_ID
+    - test1:moneymagics_db:public.users:SCHEMA_GET_DISTINCT
+    - test1:moneymagics_db:public.users:SCHEMA_MASTER_SAVE
+    - test1:moneymagics_db:public.users:SCHEMA_POST_BULK_INSERT
+    - test1:moneymagics_db:public.users:SCHEMA_POST_COUNT
+    - test1:moneymagics_db:public.users:SCHEMA_POST_DISTINCT_QUERY
+    - test1:moneymagics_db:public.users:SCHEMA_POST_QUERY
+    - test1:moneymagics_db:public.users:SCHEMA_POST_QUERY_DELETE
+    - test1:moneymagics_db:public.users:SCHEMA_POST_QUERY_STREAM
+    - test1:moneymagics_db:public.users:SCHEMA_PUT_UPDATE_BY_ID
+    - test1:moneymagics_db:public.users:SCHEMA_UPDATE_MANY
+  systemApiNames: []
+  thirdPartyApiNames: []
+  webSocketEventNames:
+    - Instance APIs:test1:moneymagics_db:public.account:Get all - schema
+    - Instance APIs:test1:moneymagics_db:public.users:Get all - schema
+    - Instance APIs:test1:moneymagics_db:public.users:Save single-multiple -
+      schema

@@ -1,0 +1,12 @@
+active: true
+apiId: SCHEMA_POST_BULK_INSERT
+collectionName: public.item
+databaseName: moneymagics_db
+guid: 01KCXG1YFYJ0M8ZMYFR74146F5
+instanceName: test1
+postHooks: []
+preHooks:
+  - _id: 694666a6ab09abebb10e18c3
+    isActive: true
+    name: leaf check
+    runOnNativeProcess: false

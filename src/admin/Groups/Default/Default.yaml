@@ -1,0 +1,26 @@
+active: true
+apisRegex:
+  allCollections: true
+  allCustomApis: true
+  allDatabases: true
+  allFields: true
+  allInstanceApis: true
+  allInstances: true
+  allSystemApis: true
+  allThirdPartyApis: true
+  allWebSocketEvents: true
+fields: {}
+guid: 01KBEVGM8747RNDX4RVKWADPNH
+name: Default
+queryParams:
+  collectionNames: []
+  customApiNames: []
+  databaseNames: []
+  eventNames: []
+  fields: []
+  instanceNames: []
+  schedulerNames: []
+  supportedApiNames: []
+  systemApiNames: []
+  thirdPartyApiNames: []
+  webSocketEventNames: []

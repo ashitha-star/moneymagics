@@ -1,0 +1,33 @@
+active: true
+apiVersion: 1.0.0
+bundleName: aws-s3-bucket
+categoryRedis: GET_DATA
+errorList:
+  - Unable to delete file
+guid: 01KCQW13WMS3AKWXRY6XC5A320
+name: Delete File
+path: /delete-file
+queryParams:
+  - _id: 639ff9c6b4d7e21940f9f3d9
+    nonRemovable: false
+    readonlyKey: false
+    readonlyValue: false
+    required: false
+    type: text
+    valueArr: []
+reqBodySchema:
+  bucketName:
+    __type: string
+    validations:
+      required: true
+  targetFileWithPath:
+    __type: string
+    validations:
+      required: true
+requestMethod: POST
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

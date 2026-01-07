@@ -1,0 +1,29 @@
+active: true
+apiVersion: 1.0.0
+bundleName: aws-s3-bucket
+categoryRedis: GET_DATA
+errorList:
+  - Unable to get bucket location
+guid: 01KCQW13WMWVV4TAF8VXX5A0BA
+name: Get Location Of Bucket
+path: /get-location-of-bucket
+queryParams:
+  - _id: 639ff9c6b4d7e21940f9f3d9
+    nonRemovable: false
+    readonlyKey: false
+    readonlyValue: false
+    required: false
+    type: text
+    valueArr: []
+reqBodySchema:
+  bucketName:
+    __type: string
+    validations:
+      required: true
+requestMethod: POST
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"
