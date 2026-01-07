@@ -1,0 +1,6 @@
+active: true
+dbMigrationTimeoutInMinutes: null
+guid: 01KCJP9JVAPQTMCBAX9M83SS3F
+label: migration_1
+name: migration_1
+order: 1

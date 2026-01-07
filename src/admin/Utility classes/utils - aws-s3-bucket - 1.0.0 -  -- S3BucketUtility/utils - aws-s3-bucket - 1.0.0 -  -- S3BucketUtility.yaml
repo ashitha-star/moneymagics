@@ -1,0 +1,13 @@
+active: true
+apiVersion: 1.0.0
+bundleName: aws-s3-bucket
+folderPath: utils/aws-s3-bucket/1.0.0/
+guid: 01KCQW15W9TTQSXV3VD5FNCJZ3
+importedUtilityClassId: null
+name: S3BucketUtility
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

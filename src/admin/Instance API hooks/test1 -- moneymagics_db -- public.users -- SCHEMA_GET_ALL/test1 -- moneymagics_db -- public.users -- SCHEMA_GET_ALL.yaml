@@ -1,0 +1,8 @@
+active: true
+apiId: SCHEMA_GET_ALL
+collectionName: public.users
+databaseName: moneymagics_db
+guid: 01KE1KS4GFEB1ZT7330PW9T36W
+instanceName: test1
+postHooks: []
+preHooks: []

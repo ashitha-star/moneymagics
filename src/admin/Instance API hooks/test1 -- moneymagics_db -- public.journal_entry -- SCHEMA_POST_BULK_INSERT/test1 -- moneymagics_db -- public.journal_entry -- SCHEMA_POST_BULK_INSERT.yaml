@@ -1,0 +1,12 @@
+active: true
+apiId: SCHEMA_POST_BULK_INSERT
+collectionName: public.journal_entry
+databaseName: moneymagics_db
+guid: 01KDQC6WNZHKRK4P40102P2EW4
+instanceName: test1
+postHooks:
+  - _id: 6953a6c59b4aa1fee85f1875
+    isActive: false
+    name: Store_journal_line_hook
+    runOnNativeProcess: false
+preHooks: []

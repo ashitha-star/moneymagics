@@ -1,0 +1,9 @@
+active: true
+apiCategory: INSTANCES
+collectionName: public.account
+databaseName: moneymagics_db
+guid: 01KE6V1MHQX7CEGXPAZR86YQJ3
+instanceApiName: SCHEMA_GET_ALL
+instanceName: test1
+runOnNativeProcess: null
+versions: []

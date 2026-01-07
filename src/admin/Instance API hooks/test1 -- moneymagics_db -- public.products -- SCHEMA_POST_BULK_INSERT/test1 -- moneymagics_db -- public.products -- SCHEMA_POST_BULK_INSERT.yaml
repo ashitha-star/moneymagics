@@ -1,0 +1,12 @@
+active: true
+apiId: SCHEMA_POST_BULK_INSERT
+collectionName: public.products
+databaseName: moneymagics_db
+guid: 01KD7VEFVXMC43HY1VN8KANXEJ
+instanceName: test1
+postHooks:
+  - _id: 694bb407123ad9e40983fbd6
+    isActive: true
+    name: product_composition
+    runOnNativeProcess: false
+preHooks: []

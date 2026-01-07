@@ -1,0 +1,10 @@
+active: true
+folderPath: utils/
+guid: 01KD4RE6QT3RNBGH9SQPJMH3A2
+name: Constants
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

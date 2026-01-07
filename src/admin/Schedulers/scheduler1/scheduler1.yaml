@@ -1,0 +1,18 @@
+active: true
+guid: 01KC6KZA442XCN3VEQYPCK5DFJ
+intervalArr:
+  - _id: 693ab00a60f323097fad3796
+    active: true
+    customInterval: null
+    timeInterval: "* * * * * *"
+    timeZone: Africa/Abidjan
+isActive: true
+name: scheduler1
+runOnNativeProcess: false
+schedulerTimeoutInMinutes: 1
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

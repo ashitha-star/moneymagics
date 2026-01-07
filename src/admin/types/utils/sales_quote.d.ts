@@ -1,0 +1,1 @@
+export declare function salesQuoteHTML(data: any): string;

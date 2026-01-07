@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "CommonJS",
+        "lib": [
+            "ES2021",
+            "DOM"
+        ],
+        "rootDir": "./",
+        "moduleResolution": "Node",
+        "baseUrl": "./",
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "am-types/*",
+                "src/types/*",
+                "src/Utility classes/*",
+                "src/admin/types/*"
+            ]
+        },
+        "pretty": true,
+        "skipLibCheck": true,
+        "preserveSymlinks": true
+    }
+}
