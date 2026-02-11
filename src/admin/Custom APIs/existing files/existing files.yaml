@@ -5,7 +5,6 @@ fileUpload:
   allowFileUploadFields:
     - files
   enable: false
-  validations: {}
 guid: 01KD2AYN69MW1HRNHRHSFGKVFC
 name: existing files
 path: /view_files

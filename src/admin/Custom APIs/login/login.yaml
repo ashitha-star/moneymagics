@@ -1,0 +1,20 @@
+acceptOnlyEncryptedData: false
+active: true
+errorList: []
+fileUpload:
+  allowFileUploadFields:
+    - files
+  enable: false
+guid: 01KG6NVB0R1FK6WVE9E506EW77
+name: login
+path: /login
+resetCacheOnModificationOf: []
+runOnNativeProcess: null
+separateSandboxSettings: null
+swaggerDocs: null
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

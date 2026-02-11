@@ -5,6 +5,7 @@ fileUpload:
   allowFileUploadFields:
     - files
   enable: false
+  validations: {}
 guid: 01KCXJ4DJJ0395M3FAY4EZ14N7
 name: fetch_leaves
 path: /fetch_leaves

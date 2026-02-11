@@ -60,7 +60,21 @@ let schema: ISchemaType = {
         validations: <IPropertyValidation>{
             maxLength: 255
         }
-    }
+    },
+    referral_id: <ISchemaProperty>{
+        __type: EType.string,
+        validations: <IPropertyValidation>{
+            required: true
+        }
+    },
+    items: <any><ISchemaProperty[]>
+    [{
+        __type: EType.number,
+        collection: "public.sales_item",
+        s_columnVirtualLinker: "id",
+        t_columnVirtualLinker: "quote_id",
+        isVirtualField: true
+    }], 
 };
 
 module.exports = { schema };

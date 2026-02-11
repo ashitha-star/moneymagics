@@ -1,0 +1,21 @@
+acceptOnlyEncryptedData: false
+active: true
+errorList: []
+fileUpload:
+  allowFileUploadFields:
+    - files
+  enable: true
+  validations: {}
+guid: 01KGH2BPYKF4G4ZGM81J3J0P12
+name: Sales Invoice
+path: /sales_invoice
+resetCacheOnModificationOf: []
+runOnNativeProcess: null
+separateSandboxSettings: null
+swaggerDocs: null
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

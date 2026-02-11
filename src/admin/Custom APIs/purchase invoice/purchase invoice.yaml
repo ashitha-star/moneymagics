@@ -1,0 +1,21 @@
+acceptOnlyEncryptedData: false
+active: true
+errorList: []
+fileUpload:
+  allowFileUploadFields:
+    - files
+  enable: true
+  validations: {}
+guid: 01KERDDBY8YHCT0A3KSS2PQF4C
+name: purchase invoice
+path: /purchase_invoice
+resetCacheOnModificationOf: []
+runOnNativeProcess: null
+separateSandboxSettings: null
+swaggerDocs: null
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

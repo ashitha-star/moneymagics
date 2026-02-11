@@ -4,7 +4,7 @@ async function getLeafAccounts(g) {
         instance: 'test1',
         database: 'moneymagics_db',
         query: `
-            SELECT id, name, category, parent_id
+            SELECT id, name, category, parent_id,is_folder
             FROM account
             ORDER BY category, parent_id, id
         `

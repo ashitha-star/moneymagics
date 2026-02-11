@@ -1,0 +1,10 @@
+active: true
+folderPath: utils/document/
+guid: 01KERXPFP50EEZJED2GYKKTDNS
+name: EmailSender
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

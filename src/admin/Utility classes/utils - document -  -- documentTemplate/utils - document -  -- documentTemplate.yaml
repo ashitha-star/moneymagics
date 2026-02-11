@@ -1,0 +1,10 @@
+active: true
+folderPath: utils/document/
+guid: 01KERF459RKKHZAT5M13VEG0SR
+name: documentTemplate
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

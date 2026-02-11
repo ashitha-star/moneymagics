@@ -512,6 +512,7 @@ export interface IAuthTokenInfo {
 export interface IAuthTokenAM {
     u: string;
     p: string;
+    expiresInSeconds?: number;
 }
 
 export interface IRefreshTokenAM {

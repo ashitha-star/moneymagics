@@ -7,7 +7,6 @@
     "dependencies": {
         "@aws-sdk/client-s3": "3.238.0",
         "@aws-sdk/smithy-client": "3.234.0",
-        "@sparticuz/chromium": "143.0.0",
         "@types/lodash": "4.14.194",
         "@types/node": "18.15.12",
         "@types/web": "0.0.153",
@@ -15,15 +14,13 @@
         "ajv-errors": "3.0.0",
         "ajv-formats": "2.1.1",
         "ajv-keywords": "5.1.0",
-        "fastify": "4.29.1",
         "json5": "2.2.3",
         "lodash": "4.17.21",
         "moment": "2.29.4",
         "nodemailer": "7.0.12",
-        "puppeteer-core": "24.34.0",
-        "qs": "6.11.1",
+        "playwright": "1.58.1",
         "source-map": "0.7.4",
         "undici": "6.21.2",
-        "ws": "8.18.1"
+        "xlsx": "0.18.5"
     }
 }

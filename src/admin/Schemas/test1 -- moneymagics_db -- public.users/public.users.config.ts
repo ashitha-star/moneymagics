@@ -26,6 +26,9 @@ let schema: ISchemaType = {
         validations: <IPropertyValidation>{
             required: true,
             maxLength: 255
+        },
+        conversions: {
+            encryption: true
         }
     },
     phone_number: <ISchemaProperty>{
@@ -36,7 +39,14 @@ let schema: ISchemaType = {
     },
     is_active: EType.boolean,
     created_at: EType.date,
-    updated_at: EType.date
+    updated_at: EType.date,
+    userType: <ISchemaProperty>{
+        __type: EType.string,
+        validations: <IPropertyValidation>{
+            required: true,
+            maxLength: 50
+        }
+    }
 };
 
 module.exports = { schema };

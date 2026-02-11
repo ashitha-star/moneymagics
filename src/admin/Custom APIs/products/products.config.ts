@@ -28,7 +28,45 @@ let customApi: T.ICustomApiSettingsTypes = {
         ],
         validations: {
         }
-    }
+    },
+    // reqBodySchema: {
+    //     name: {
+    //         __type: EType.string,
+    //         validations: {
+    //             required: true,
+    //         }
+    //     },
+    //     quantity: {
+    //         __type: EType.number,
+    //         validations: {
+    //             required: true,
+    //         }
+    //     },
+    //     cost_price: {
+    //         __type: EType.number,
+    //         validations: {
+    //             required: true,
+    //         }
+    //     },
+    //     selling_price:{
+    //         __type: EType.number,
+    //         validations: {
+    //             required: true,
+    //         }
+    //     },
+    //     raw_material_id:{
+    //         __type: EType.number,
+    //         validations: {
+    //             required: true,
+    //         }
+    //     },
+    //     quantity_used:{
+    //         __type: EType.number,
+    //         validations: {
+    //             required: true,
+    //         }
+    //     }
+    //     }
 
 };
 module.exports = customApi;

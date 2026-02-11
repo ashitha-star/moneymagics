@@ -1,0 +1,10 @@
+active: true
+folderPath: utils/document/
+guid: 01KERXMWMGH0SSD9YRZT47GZQV
+name: FileUploader
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

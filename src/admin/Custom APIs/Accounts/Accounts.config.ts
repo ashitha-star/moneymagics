@@ -15,7 +15,8 @@ let customApi: T.ICustomApiSettingsTypes = {
     errorList: [ // These errors will be listed in i18N so we can map it in different languages.
         // 'Unable to process this request',
     ],
-    apiAccessType: T.EAPIAccessType.IS_PUBLIC,
+
+    apiAccessType: T.EAPIAccessType.TOKEN_ACCESS,
     
     // No value = pickup authTokenInfo from default secret
     // Empty Array = Only AM authorization required because we are overriding default secret's authTokenInfo

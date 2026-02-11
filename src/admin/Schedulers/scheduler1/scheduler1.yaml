@@ -6,7 +6,7 @@ intervalArr:
     customInterval: null
     timeInterval: "* * * * * *"
     timeZone: Africa/Abidjan
-isActive: true
+isActive: false
 name: scheduler1
 runOnNativeProcess: false
 schedulerTimeoutInMinutes: 1

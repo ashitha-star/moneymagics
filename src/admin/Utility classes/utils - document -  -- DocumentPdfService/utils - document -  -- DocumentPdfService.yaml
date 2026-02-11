@@ -1,0 +1,10 @@
+active: true
+folderPath: utils/document/
+guid: 01KGM6Y8JVEMFG0E3E3RHNHPJQ
+name: DocumentPdfService
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

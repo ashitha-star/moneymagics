@@ -1,0 +1,23 @@
+active: true
+eventListeners:
+  - _id: 6981e0966fc9378862846a25
+    eventListenerTimeoutInMinutes: null
+    name: listener1
+    runOnNativeProcess: null
+    versions:
+      - isActive: true
+        name: Original
+        version: "-1"
+guid: 01KGHN9TF3J6Y3MBZ0576R1REW
+isAutomaticallyTriggerOnApiHit: true
+name: send_email
+triggerOnApis:
+  - _id: 6981e064a42927e6ff2cc451
+    apiCategory: CUSTOM_APIS
+    customApiName: purchase invoice
+  - _id: 69870333aa47b218ae03d441
+    apiCategory: CUSTOM_APIS
+    customApiName: sales quotes
+  - _id: 69872549674f7c1ebe17920a
+    apiCategory: CUSTOM_APIS
+    customApiName: Sales Invoice

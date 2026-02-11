@@ -9,11 +9,11 @@ settings:
     dependencies:
       nodeJS:
         - active: true
-          name: puppeteer-core
-          version: 24.34.0
+          name: playwright
+          version: 1.58.1
         - active: true
-          name: "@sparticuz/chromium"
-          version: 143.0.0
+          name: xlsx
+          version: 0.18.5
         - active: true
           name: nodemailer
           version: 7.0.12

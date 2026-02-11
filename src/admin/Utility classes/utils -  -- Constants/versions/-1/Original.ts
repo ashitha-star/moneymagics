@@ -5,6 +5,7 @@ class Constants {
 
     col = {
         sales_quote: 'public.sales_quote',
+        party:'public.party'
     };
 
 }

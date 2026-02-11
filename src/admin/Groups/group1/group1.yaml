@@ -1,6 +1,6 @@
 active: true
 apisRegex:
-  allCollections: false
+  allCollections: true
   allCustomApis: false
   allDatabases: false
   allFields: true
@@ -54,10 +54,8 @@ name: group1
 queryParams:
   collectionNames:
     - test1:moneymagics_db:public.account
-    - test1:moneymagics_db:public.item
     - test1:moneymagics_db:public.journal_entry
     - test1:moneymagics_db:public.journal_line
-    - test1:moneymagics_db:public.party
     - test1:moneymagics_db:public.product_composition
     - test1:moneymagics_db:public.products
     - test1:moneymagics_db:public.purchase_invoice
@@ -72,7 +70,26 @@ queryParams:
     - test1:moneymagics_db:public.tax_code
     - test1:moneymagics_db:public.time_entry
     - test1:moneymagics_db:public.users
-  customApiNames: []
+  customApiNames:
+    - Accounts
+    - Journal-unique-number
+    - Products export
+    - Raw Materials Export
+    - Sales Invoice Export
+    - Sales Quotes Export
+    - Tax Export
+    - existing files
+    - fetch_leaves
+    - file reading
+    - items export
+    - journalEntry_Update
+    - journal_entry
+    - login
+    - party_export
+    - products
+    - purchase invoice
+    - purchase_invoice_export
+    - sales quotes
   databaseNames:
     - test1:moneymagics_db
   eventNames: []
