@@ -80,8 +80,7 @@ let schema: ISchemaType = {
         validations: <IPropertyValidation>{
             required: true
         }
-    },
-    moq: EType.number
+    }
 };
 
 module.exports = { schema };

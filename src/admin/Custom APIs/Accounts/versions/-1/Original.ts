@@ -3,14 +3,8 @@ async function accountCategoryTree(g) {
     // categories always want in response
     const categories = ['assets', 'expenses', 'income', 'liabilites'];
 
-    const accounts = await g.sys.system.executeQuery({
-        instance: 'test1',
-        database: 'moneymagics_db',
-        query: `
-            SELECT id, name, category, parent_id, is_folder
-            FROM account
-            ORDER BY name
-        `
+    const accounts = await g.sys.db.getAll({
+        instance: 'test1', database: 'moneymagics_db', collection: "account",
     });
 
     // Build lookup map

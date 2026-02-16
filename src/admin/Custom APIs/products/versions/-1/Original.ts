@@ -31,12 +31,6 @@ async function main(g) {
         saveData: body.composition.map(e=> {return {...e,product_id: productId}})
     });
 
-    //   if (Array.isArray(body.composition)) {
-    // for (const c of body.composition) {
-
-    // }
-    //   }
-
     return {
         success: true,
         product_id: productId
@@ -44,3 +38,34 @@ async function main(g) {
 }
 
 module.exports = main;
+
+// import * as C from 'utils/Constants';
+
+// async function main(g) {
+
+//     const body = g.req.body;
+
+//     const result = await g.sys.db.saveSingleOrMultiple({
+//         instance: C.instance,
+//         database: C.db,
+//         collection: "public.product_composition",
+//         saveData: {
+//             raw_material_id: body.raw_material_id,
+//             quantity_used: body.quantity_used,
+
+//             product: {
+//                 name: body.product.name,
+//                 quantity: body.product.quantity,
+//                 cost_price: body.product.cost_price,
+//                 selling_price: body.product.selling_price
+//             }
+//         }
+//     });
+
+//     return {
+//         success: true,
+//         data: result
+//     };
+// }
+
+// module.exports = main;

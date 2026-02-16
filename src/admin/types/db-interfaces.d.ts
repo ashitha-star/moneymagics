@@ -154,7 +154,6 @@ export interface IPublicItem {
     tax: number;
     sales_account_id: number;
     purchase_account_id: number;
-    moq?: number;
 }
 export type IPublicItem_P = Partial<IPublicItem>;
 export type IPublicItem_S = { [Property in keyof IPublicItem_P]: 1 | -1 };
@@ -242,6 +241,7 @@ export interface IPublicPurchaseInvoice {
     total_amount: string;
     notes?: string;
     attachment?: string;
+    purchase_item?: number[];
 }
 export type IPublicPurchaseInvoice_P = Partial<IPublicPurchaseInvoice>;
 export type IPublicPurchaseInvoice_S = { [Property in keyof IPublicPurchaseInvoice_P]: 1 | -1 };

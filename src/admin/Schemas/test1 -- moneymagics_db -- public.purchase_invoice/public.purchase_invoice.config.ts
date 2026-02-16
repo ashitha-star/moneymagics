@@ -55,7 +55,15 @@ let schema: ISchemaType = {
         validations: <IPropertyValidation>{
             maxLength: 255
         }
-    }
+    },
+    purchase_item: <any><ISchemaProperty[]>
+    [{
+        __type: EType.number,
+        collection: "public.purchase_item",
+        s_columnVirtualLinker: "id",
+        t_columnVirtualLinker: "invoice_id",
+        isVirtualField: true
+    }],
 };
 
 module.exports = { schema };

@@ -93,21 +93,38 @@ async function sendSalesInvoice(g) {
             invSave?.[0]?.id;
 
         /* ---------- SAVE SALES ITEMS ---------- */
-        for (const item of items) {
-            await g.sys.db.saveSingleOrMultiple({
-                instance: C.instance,
-                database: C.db,
-                collection: 'public.sales_item',
-                saveData: {
-                    invoice_id: invoiceId,
-                    item_id: item.item_id,
-                    quantity: item.quantity,
-                    rate: item.rate,
-                    tax_percent: item.tax_percent,
-                    amount: item.amount
-                }
-            });
-        }
+        // for (const item of items) {
+        //     await g.sys.db.saveSingleOrMultiple({
+        //         instance: C.instance,
+        //         database: C.db,
+        //         collection: 'public.sales_item',
+        //         saveData: {
+        //             invoice_id: invoiceId,
+        //             item_id: item.item_id,
+        //             quantity: item.quantity,
+        //             rate: item.rate,
+        //             tax_percent: item.tax_percent,
+        //             amount: item.amount
+        //         }
+        //     });
+        // }
+
+        const salesItems = items.map(item => ({
+            invoice_id: invoiceId,
+            item_id: item.item_id,
+            quantity: item.quantity,
+            rate: item.rate,
+            tax_percent: item.tax_percent,
+            amount: item.amount
+        }));
+
+        await g.sys.db.saveSingleOrMultiple({
+            instance: C.instance,
+            database: C.db,
+            collection: 'public.sales_item',
+            saveData: salesItems
+        });
+
 
         /* ---------- FETCH ITEMS FOR EMAIL ---------- */
         const dbItems = await g.sys.db.query({

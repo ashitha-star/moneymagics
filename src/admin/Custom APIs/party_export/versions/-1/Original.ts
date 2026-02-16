@@ -18,7 +18,7 @@ module.exports = async function downloadInvoiceExcel(g) {
         role ="party"
     }
 
-    // 1️⃣ Fetch DB data
+    // Fetch DB data
     const rows = await g.sys.db.query({
         instance: "test1",
         database: "moneymagics_db",
@@ -30,17 +30,23 @@ module.exports = async function downloadInvoiceExcel(g) {
         }
     });
 
-
-    // 2️⃣ Define headers
+    // Define headers
     const headers = [
         { key: "name", label: "Name" },
+        { key: "role", label: "Role" },
         { key: "email", label: "Email" },
         { key: "phone", label: "Phone Number" },
-        { key: "due_amount", label: "due_amount" }
+        { key: "address", label: "Address" },
+        { key: "default_account", label: "Account" },
+        { key: "currency", label: "Currency" },
+        { key: "gst_reg", label: "GST Registration" },
+        { key: "gstin_no", label: "GSTIN No" },
+        { key: "due_amount", label: "Due Amount" }
+        
     ];
     const fileName = `${role}.xlsx`;
 
-    // 3️⃣ Generate & save file
+    // Generate & save file
     const savedFilePath = await generateAndSaveExcel({
         headers,
         data: rows || [],
@@ -48,7 +54,7 @@ module.exports = async function downloadInvoiceExcel(g) {
         fileName: fileName
     });
 
-    // 4️⃣ Return Api Maker download response
+    // Return Api Maker download response
     return {
         __am__downloadFilePath: savedFilePath,
         __am__downloadFolderFileName: fileName

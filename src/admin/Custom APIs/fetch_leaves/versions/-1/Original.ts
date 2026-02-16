@@ -1,13 +1,7 @@
 async function getLeafAccounts(g) {
     // Fetch all accounts
-    const accounts = await g.sys.system.executeQuery({
-        instance: 'test1',
-        database: 'moneymagics_db',
-        query: `
-            SELECT id, name, category, parent_id,is_folder
-            FROM account
-            ORDER BY category, parent_id, id
-        `
+    const accounts = await g.sys.db.getAll({
+        instance: 'test1',database: 'moneymagics_db', collection: "account",
     });
 
     // Build a lookup map

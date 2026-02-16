@@ -5,6 +5,7 @@ fileUpload:
   allowFileUploadFields:
     - files
   enable: false
+  validations: {}
 guid: 01KCKD3ASMYCZQV4VX9PS1EWH1
 name: Accounts
 path: /accounts

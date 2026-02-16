@@ -3,58 +3,57 @@ const { generateAndSaveExcel } = require("utils/excel/invoiceExcelUtil");
 
 module.exports = async function downloadInvoiceExcel(g) {
 
-    // Fetch products
-    const products = await g.sys.db.getAll({
+    // FETCH PRODUCTS WITH COMPOSITION + MATERIAL
+    let result = await g.sys.db.query({
         instance: "test1",
         database: "moneymagics_db",
         collection: "public.products",
+        deep: [
+            {
+
+                s_key: "composition",
+                isMultiple: true,
+                deep: [
+                    {
+                        s_key: "raw_material_id",
+                        isMultiple: false,
+                        select: "name,quantity"
+                    }
+                ]
+            }
+        ]
+    });
+    console.log(result)
+
+    const products = Array.isArray(result)
+        ? result
+        : result?.data || [];
+
+    // TRANSFORM TO EXCEL FORMAT
+    const data = products.map(product => {
+
+        const compositions = product.composition || [];
+
+        const compositionText = compositions.length
+            ? compositions
+                .map(c => {
+                    const materialName = c.raw_material_id?.name || "-";
+                    return `${materialName} * ${c.quantity_used}`;
+                })
+                .join(", ")
+            : "-";
+
+
+        return {
+            name: product.name,
+            quantity: product.quantity,
+            cost_price: product.cost_price,
+            selling_price: product.selling_price,
+            composition: compositionText
+        };
     });
 
-    // Fetch product composition
-    const compositions = await g.sys.db.getAll({
-        instance: "test1",
-        database: "moneymagics_db",
-        collection: "public.product_composition",
-    });
-
-    // Fetch raw materials
-    const rawMaterials = await g.sys.db.getAll({
-        instance: "test1",
-        database: "moneymagics_db",
-        collection: "public.raw_materials",
-    });
-
-    // Build rawMaterialId → name map
-    const rawMaterialMap = {};
-    (rawMaterials || []).forEach(rm => {
-        rawMaterialMap[rm.id] = rm.name;
-    });
-
-    // Build productId → composition string map
-    const compositionMap = {};
-
-    (compositions || []).forEach(comp => {
-        const materialName = rawMaterialMap[comp.raw_material_id];
-        if (!materialName) return;
-
-        const entry = `${materialName} * ${comp.quantity_used}`;
-
-        if (!compositionMap[comp.product_id]) {
-            compositionMap[comp.product_id] = [];
-        }
-
-        compositionMap[comp.product_id].push(entry);
-    });
-
-    // Attach composition to products
-    const data = (products || []).map(product => ({
-        ...product,
-        composition: compositionMap[product.id]
-            ? compositionMap[product.id].join(", ")
-            : "-"
-    }));
-
-    // Excel headers
+    // EXCEL HEADERS
     const headers = [
         { key: "name", label: "Name" },
         { key: "quantity", label: "Quantity" },
@@ -63,7 +62,7 @@ module.exports = async function downloadInvoiceExcel(g) {
         { key: "composition", label: "Composition" }
     ];
 
-    // Generate & save Excel
+    // GENERATE FILE
     const savedFilePath = await generateAndSaveExcel({
         headers,
         data,
@@ -71,7 +70,6 @@ module.exports = async function downloadInvoiceExcel(g) {
         fileName: "products.xlsx"
     });
 
-    // Return Api Maker download response
     return {
         __am__downloadFilePath: savedFilePath,
         __am__downloadFolderFileName: "products.xlsx"
